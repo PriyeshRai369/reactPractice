@@ -17,8 +17,8 @@ function App() {
           placeholder="Enter Password"
         />
         {
-          view ? <img src="../public/view.png"  onClick={change} /> : 
-            <img src="../public/hide.png"  onClick={change} />
+          view ? <img src="/view.png"  onClick={change} /> : 
+            <img src="/hide.png"  onClick={change} />
         }
       </div>
     </>
