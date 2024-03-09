@@ -17,7 +17,6 @@ function App() {
   function HandleClick(index) {
     const newVal = newData.filter((_, i) => i !== index);
     setNewData(newVal);
-    // Remove checked status for the deleted item
     setChecked(prevChecked => {
       const updatedChecked = { ...prevChecked };
       delete updatedChecked[index];
