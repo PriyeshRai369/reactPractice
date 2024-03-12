@@ -1,27 +1,20 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
-.calcContainer {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
 .box {
-  width: 300px;
-  height: 600px;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 10px 0;
-  padding: 20px;
-}
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
