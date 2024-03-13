@@ -14,3 +14,6 @@
     cursor: pointer;
     outline: none;
 }
+.button:active{
+    transform: scale(.9);
+}
