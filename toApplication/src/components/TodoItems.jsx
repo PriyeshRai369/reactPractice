@@ -1,7 +1,7 @@
 import React from "react";
 import TodoBody from "./TodoBody";
 
-function TodoItems({ data }) {
+function TodoItems({ data, handleClick }) {
   return (
     <>
       {data.map((value,index)=>{
@@ -9,7 +9,9 @@ function TodoItems({ data }) {
             <TodoBody 
             key={index} 
             name={value.name} 
-            date={value.date} />
+            date={value.date} 
+            click={()=>handleClick(index)}
+            />
         );
       })}
     </>
