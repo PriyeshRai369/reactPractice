@@ -1,21 +1,15 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 
 function TodoHeader({addItems}) {
-    const [inputText,setInputText] = useState("")
-    const [inputDate,setInputDate] = useState("")
-    function handleTextChange(event){
-        const textValue = event.target.value;
-        setInputText(textValue)
-    }
-    function handleDateChange(event){
-        const dateValue = event.target.value;
-        setInputDate(dateValue)
-    }
+    const inputText = useRef();
+    const inputDate = useRef();
 
     function handleClick(){
-        addItems(inputText,inputDate)
-        setInputDate("")
-        setInputText("")
+        const text = inputText.current.value;
+        const date = inputDate.current.value;
+        inputText.current.value ="";
+        inputDate.current.value ="";
+        addItems(text,date)
     }
   return( 
   <div className="container">
@@ -24,14 +18,12 @@ function TodoHeader({addItems}) {
         <div className="row my-3">
             <div className="col-5">
                 <input type="text" className="w-100"
-                onChange={handleTextChange} 
-                value={inputText}
+                ref={inputText}
                 />
             </div>
             <div className="col-4">
                 <input type="date" className="w-100"
-                onChange={handleDateChange}
-                value={inputDate}
+                ref={inputDate}
                 />
             </div>
             <div className="col-3">

@@ -1,0 +1,15 @@
+.notesContainer{
+    width: 100%;
+    height: 565px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 20px;
+    position: relative;
+}

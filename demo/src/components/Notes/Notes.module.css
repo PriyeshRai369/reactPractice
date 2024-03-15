@@ -1,0 +1,49 @@
+.notesContainers{
+    width:270px ;
+    min-height: 200px;
+    flex-grow: 1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 20px;
+    margin: 20px;
+    float: left;
+    padding: 0 20px 20px 20px;
+    text-align: justify;
+    position: relative;
+    p{
+        margin: 10px 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(237, 180, 73);
+    }
+}
+.heading{
+    width: 100%;
+    height:60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(122, 121, 121);
+}
+span{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(237, 180, 73);
+}
+.description{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(75, 75, 75);
+}
+.closeBtn{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(237, 180, 73);
+    cursor: pointer;
+    background-color: rgb(230, 237, 237);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
