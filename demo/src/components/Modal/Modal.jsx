@@ -17,7 +17,7 @@ function Modal({ onClick, handleChange }) {
       alert("Please fill in both title and description fields.");
       return;
     }
-    handleChange(inputDesc, inputTitle);
+    handleChange(inputTitle , inputDesc);
     onClick(false);
   }
   return (
