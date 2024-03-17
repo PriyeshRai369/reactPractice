@@ -15,7 +15,7 @@ function CardContainer({ value }) {
         </div>
         <div className={style.stockContainer}>
           <h3>Stocks :- {value.stock}</h3>
-          <p>Discount :- {value.discountPercentage}</p>
+          <p>Discount :- {value.discountPercentage}%</p>
         </div>
         <div className={style.description}>
           <p>{value.description}</p>
