@@ -1,36 +1,43 @@
 import React from "react";
+import { Form, redirect } from "react-router-dom";
 
-function CreatePost() {
+function ElementThree() {
   return (
-    <form>
+    <Form className="container" method="POST">
       <div className="mb-3">
-        <label for="exampleInputEmail1" className="form-label">
+        <label htmlFor="exampleInputEmail1" className="form-label">
           Email address
         </label>
         <input
+          name="userName"
           type="email"
           className="form-control"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
-          autoComplete="username"
         />
       </div>
       <div className="mb-3">
-        <label for="exampleInputPassword1" className="form-label">
+        <label htmlFor="exampleInputPassword1" className="form-label">
           Password
         </label>
         <input
+          name="password"
           type="password"
           className="form-control"
           id="exampleInputPassword1"
-          autoComplete="current-password"
         />
       </div>
       <button type="submit" className="btn btn-primary">
         Submit
       </button>
-    </form>
+    </Form>
   );
 }
+export async function submitData(data){
+    const formData = await data.request.formData()
+    const newData = Object.fromEntries(formData)
+    console.log(newData);
+    return redirect('/')
+}
 
-export default CreatePost;
+export default ElementThree;
