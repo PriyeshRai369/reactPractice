@@ -1,0 +1,23 @@
+.inputContainer{
+    width: 100%;
+    min-height: 250px;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    /* border: 1px solid; */
+}
+.heading{
+    width: 100%;
+
+    p{
+        font-weight: 600;
+        color: rgb(84, 84, 84);
+        font-size: 12px;
+    }
+}

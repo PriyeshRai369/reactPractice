@@ -1,0 +1,10 @@
+.heading{
+    color: #00ED64;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    span{
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+    }
+}
