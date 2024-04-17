@@ -1,10 +1,11 @@
 import './App.css'
+import Card from './components/Card/Card'
 
 function App() {
 
   return (
     <>
-    <h1>Priyesh Rai</h1>
+      <Card/>
     </>
   )
 }
