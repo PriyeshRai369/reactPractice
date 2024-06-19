@@ -2,6 +2,7 @@ import React from 'react'
 import style from './InputContainer.module.css'
 import InputFild from '../InputFild/InputFild'
 import Heading from '../Heading/Heading'
+import Ads from '../Ads/Ads'
 
 function InputContainer({handleClicks}) {
   return (
@@ -10,6 +11,7 @@ function InputContainer({handleClicks}) {
           <Heading />
         <p>Keep Your Password Safe</p>
         </div>
+        <Ads/>
         <InputFild handleClicks={handleClicks} />
     </div>
   )
