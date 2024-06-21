@@ -23,6 +23,38 @@
 
   }
 }
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  .imageWraper{
+    columns: 3;
+    gap: 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .imageWraper{
+    columns: 2;
+    gap: 10px;
+  }
+}
+@media (max-width: 575.98px) { 
+  .imageWraper{
+    columns: 1;
+    gap: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .imageWraper{
+    columns: 4;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) { 
+  .imageWraper{
+    columns: 5;
+    gap: 20px;
+  }
+}
+
 .fullScreen{
     position: fixed;
     top: 0;
