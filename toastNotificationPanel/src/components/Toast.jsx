@@ -15,7 +15,7 @@ function Toast({ type, top, left, right, bottom, bgColour, message }) {
     } else if (type === "error") {
       setColors("#DC3545");
     }
-  }, [type]);
+  }, [type,top,left,bottom,right]);
 
   return (
     <>
@@ -26,15 +26,16 @@ function Toast({ type, top, left, right, bottom, bgColour, message }) {
       <div
         className="toastContainer"
         style={{
-          top: `${top}` + "px",
-          left: `${left}` + "px",
-          right: `${right}` + "px",
-          bottom: `${bottom}` + "px",
+          top: `${top}` + "px" || "0",
+          left: `${left}` + "px" || "0",
+          right: `${right}` + "px" || "0",
+          bottom: `${bottom}` + "px" || "0",
           "--toast-after-bg": colors,
           backgroundColor: bgColour,
           display: `${showToast ? "block" : "none"}`
         }}
       >
+        
         <div
           className="toastCloseBtn"
           style={{ backgroundColor: colors }}
